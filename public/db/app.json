@@ -71,7 +71,7 @@
       "id": "1",
       "matchId": "1",
       "userId": "1",
-      "status": "dontKnow"
+      "status": "present"
     },
     {
       "id": "2",
@@ -95,13 +95,13 @@
       "id": "5",
       "matchId": "1",
       "userId": "5",
-      "status": "absent"
+      "status": "present"
     },
     {
       "id": "6",
       "matchId": "2",
       "userId": "1",
-      "status": "dontKnow"
+      "status": "present"
     },
     {
       "id": "7",
@@ -125,13 +125,13 @@
       "id": "10",
       "matchId": "2",
       "userId": "5",
-      "status": "dontKnow"
+      "status": "present"
     },
     {
       "id": "11",
       "matchId": "3",
       "userId": "1",
-      "status": "dontKnow"
+      "status": "present"
     },
     {
       "id": "12",
@@ -155,7 +155,7 @@
       "id": "15",
       "matchId": "3",
       "userId": "5",
-      "status": "dontKnow"
+      "status": "present"
     }
   ]
 }
