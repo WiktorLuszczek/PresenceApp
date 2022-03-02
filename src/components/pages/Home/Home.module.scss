@@ -1,0 +1,12 @@
+.header {
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding-top: 50px;
+    font-size: 70px;
+}
+@media (max-width: 768px){
+    .header{
+        font-size: 30px;
+    }
+}

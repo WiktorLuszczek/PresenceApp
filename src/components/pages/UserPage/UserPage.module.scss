@@ -1,0 +1,29 @@
+.title{
+    background-color: white;
+    border-radius: 25px;
+    padding: 20px 0;
+    font-weight: 200;
+    margin: 50px 0; 
+    text-align: center;
+    font-size: 40px;
+    line-height: 50px;
+}
+.spanTitle{
+    font-weight: 700;
+    font-size: 50px;
+    margin: 0 10px;
+}
+.article{
+    width: 100%;
+    border: solid white;
+    border-radius: 25px;
+}
+@media (max-width: 768px){
+    .title{
+        font-size: 20px;
+    }
+    .spanTitle{
+        font-size: 25px;
+        margin: 0 8px;
+    }
+}

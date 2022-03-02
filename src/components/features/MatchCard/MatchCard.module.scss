@@ -1,0 +1,37 @@
+.section{
+    margin: 15px auto;
+    width: 95%;
+    min-height: 150px;
+    background-color: white;
+    border-radius: 25px;
+}
+p{
+    display: inline;
+    margin: 5px;
+    font-size: 25px;
+    line-height: 50px;
+}
+.boldParahraph{
+    font-weight: 700;
+    margin-left: 0;
+}
+@media (max-width: 768px){
+    .section{
+        padding: 5px;
+        margin: 0 0 20px;
+        width: 96%;
+    }
+    p{
+        display: block;
+        font-size: 18px;
+        margin: 0;
+        line-height: 25px;
+    }
+    p:first-of-type{
+        padding-top: 10px;
+    }
+    .boldParahraph{
+        margin-left: 40px;
+        font-size: 20px;
+    }
+}
