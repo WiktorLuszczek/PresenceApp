@@ -12,7 +12,6 @@ export const SelectionForm = props =>{
     const id = objStatus.id;
     const [status, setStatus] = useState(objStatus.status);
     const handleSubmit = (e) => {
-        e.preventDefault()
         dispatch(sendStatusRequest({id, matchId, userId, status}))
         alert('Zmieniono status na mecz w kolejce ' + matchId + ' na: ' + translateStatus(status));
     }
