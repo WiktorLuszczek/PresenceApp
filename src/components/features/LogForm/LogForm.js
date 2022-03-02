@@ -10,9 +10,9 @@ export const LogForm = () => {
     const [name, setName] = useState(undefined);
     const [number, setNumber] = useState(undefined);
     const user = useSelector(state => findUserByNameAndNumber(state, name, number))
-    const url = () => {
-        if(typeof user === 'object') return '/user' + user.id
-        else return '/'
+    const log = () => {
+        if(typeof user === 'object') return <Link to={'/user' + user.id}>Zaloguj</Link>
+        else return 'Podaj swoje dane do logowania'
     }
     const handleSubmit = e => {
         e.preventDefault();
@@ -22,7 +22,6 @@ export const LogForm = () => {
             } else return alert('Dane do logowania są niepoprawne')
         }
     };
-    console.log(url())
     return (
         <form className={styles.form} onSubmit={handleSubmit}>
             <div className={styles.box}>
@@ -33,7 +32,7 @@ export const LogForm = () => {
                 <p>Numer: </p>
                 <Input placeholder={'Podaj swój numer'} action={e => setNumber(e.target.value)} />
             </div>
-            <Link to={'/user5'}>Zaloguj się</Link>
+            {log()}
         </form>
     )
 }
