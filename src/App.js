@@ -11,6 +11,7 @@ import { Routes,
    } from 'react-router-dom';
 import { Home } from './components/pages/Home/Home';
 import { UserPage } from './components/pages/UserPage/UserPage';
+import { Admin } from './components/views/Admin/Admin';
 
 function App() {
   const dispatch = useDispatch();
@@ -24,6 +25,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/user:id' element={<UserPage />} />
+          <Route path='/admin' element={<Admin />} />
         </Routes>
       </Container>
     </>

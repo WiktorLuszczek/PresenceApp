@@ -1,6 +1,7 @@
 import { API_URL } from "../config";
 
 export const findStatus = state => state.status;
+export const findStatusByMatchId = ({status}, matchId) => status.filter(stat => stat.matchId === matchId)
 export const findStatusByMatchIdAndUserId = ({ status }, matchId, userId) => status.find(stat => stat.matchId === matchId && stat.userId === userId)
 
 const createActionName = name => `api/status/${name}`;
