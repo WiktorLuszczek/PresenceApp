@@ -95,7 +95,7 @@
       "id": "5",
       "matchId": "1",
       "userId": "5",
-      "status": "dontKnow"
+      "status": "absent"
     },
     {
       "id": "6",
@@ -155,7 +155,7 @@
       "id": "15",
       "matchId": "3",
       "userId": "5",
-      "status": "present"
+      "status": "dontKnow"
     }
   ]
 }
