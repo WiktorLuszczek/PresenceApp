@@ -4,6 +4,7 @@ import { findMatches } from '../../../redux/matchesRedux'
 import { SummaryCard } from '../../features/SummaryCard/SummaryCard'
 import styles from './Admin.module.scss'
 import { Input } from '../../common/Input/Input'
+import { Link } from 'react-router-dom'
 
 export const Admin = () => {
     const matches = useSelector(state => findMatches(state))
@@ -18,7 +19,8 @@ export const Admin = () => {
     }
     if(log) {
         return(
-            <>
+            <>  
+                <Link className={styles.linkToHeadpage} to={'/'} >Strona główna</Link>
                 <h1 className={styles.title}>Podgląd statusów</h1>
                 <article className={styles.article}>
                     {matches.map(match => <SummaryCard key={match.id} match={match} />)}
@@ -28,15 +30,15 @@ export const Admin = () => {
         }
     else{
         return( 
-            <form onSubmit={handleSubmit}>
-            <div>
-                <p>Imię: </p>
-                <Input placeholder={'Podaj swoje imię'} action={e => setName(e.target.value)}/>
-            </div>
-            <div>
-                <p>Hasło: </p>
-                <Input placeholder={'Podaj hasło'} action={e => setPass(e.target.value)}/>
-            </div>
+            <form className={styles.adminLogForm} onSubmit={handleSubmit}>
+                <div>
+                    <p>Imię: </p>
+                    <input placeholder={'Podaj swoje imię'} onChange={e => setName(e.target.value)}/>
+                </div>
+                <div>
+                    <p>Hasło: </p>
+                    <input placeholder={'Podaj hasło'} type='password' onChange={e => setPass(e.target.value)}/>
+                </div>
             <button>Zaloguj</button>
         </form>
         )

@@ -7,7 +7,7 @@ import { NavBar } from './components/views/NavBar/NavBar'
 import { Container } from './components/views/Container/Container'
 import { Routes, 
   Route,
-  Link
+  BrowserRouter
    } from 'react-router-dom';
 import { Home } from './components/pages/Home/Home';
 import { UserPage } from './components/pages/UserPage/UserPage';
@@ -22,11 +22,13 @@ function App() {
     <>
       <NavBar />
       <Container>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/user:id' element={<UserPage />} />
-          <Route path='/admin' element={<Admin />} />
-        </Routes>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/user:id' element={<UserPage />} />
+            <Route path='/admin' element={<Admin />} />
+          </Routes>
+        </BrowserRouter>
       </Container>
     </>
   );

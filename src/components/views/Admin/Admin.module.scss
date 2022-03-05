@@ -10,3 +10,28 @@
     border-radius: 10px;
     padding: 3%;
 }
+.linkToHeadpage{
+    color: white;
+    font-size: 25px;
+}
+.adminLogForm{
+    width: 350px;
+    margin: 100px auto 0;
+    color: white;
+    input{
+        width: 200px;
+        font-size: 25px;
+        float: right;
+        line-height: 40px;
+    }
+    button{
+        width: 150px;
+        height: 50px;
+        color: black;
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+        margin: 10px 100px 0;
+        cursor: pointer;
+    }
+}
