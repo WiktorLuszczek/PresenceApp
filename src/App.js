@@ -22,13 +22,11 @@ function App() {
     <>
       <NavBar />
       <Container>
-        <BrowserRouter>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/user:id' element={<UserPage />} />
             <Route path='/admin' element={<Admin />} />
           </Routes>
-        </BrowserRouter>
       </Container>
     </>
   );
